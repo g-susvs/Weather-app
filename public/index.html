@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="./css/clima.css">
+    <link rel="stylesheet" href="./css/start.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <main>
+            <!-- =======================        INICIO     =========================== -->
+            <section class="start">
+                <img src="./assets/ball-triangle.svg" alt="">
+            </section>
+            
+            <!-- =======================     SEARCH LOCATION        =============================== -->
+            <section class="search-view">
+                <header class="search-header">
+                    <svg id="btn-back" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                      </svg>
+                    <input type="search" placeholder="Busca algún sitio" id="input-search">
+                    <button type="button" id="btn-search">
+                        BUSCAR
+                    </button>
+                </header>
+                <section>
+                    <ul id="locations">
+                    </ul>
+                    <div class="loader">
+                        <img src="./assets/ball-triangle.svg" alt="loader">
+
+                    </div>
+                </section>
+            </section>
+            <!-- =======================     SECTION WEATHER        =============================== -->
+            <section class="weather">
+                <header>
+                    <div class="location">
+                    </div>
+                        <svg id="search" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search btn-search-view" width="30" height="30" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                </header>
+            <img alt="day" id="img-weather">
+            <div class="weather-temp">
+            </div>
+            
+        </section>
+        <!-- =======================     SECTION TODAY'S HIGHLIGHTS        =============================== -->
+           <section class="status">
+               <div class="status-card">
+                    <h3>Estado del viento</h3>
+                    <div id="wind">
+                        
+                    </div>
+                </div>
+                <div class="status-card">
+                    <h3>Humedad</h3>
+                    <div id="humidity">
+                        
+                    </div>
+                </div>
+                <div class="status-card">
+                    <h3>Visibilidad</h3>
+                    <div id="visibility">
+                      
+                    </div>
+                </div>
+                <div class="status-card">
+                    <h3>Presión atmosferica</h3>
+                    <div id="air-pressure">
+                      
+                    </div>
+                </div>
+           </section>
+        </main>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
